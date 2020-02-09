@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+<!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=94d26d09-c51a-4a78-9b02-febcddbd3777"> </script>
+<!-- End of  Zendesk Widget script -->
+
+
+</head>
+<body>
+    <div id="container">
+        <div  id="img">
+            <h1>Welcome To Our Crop field..</h1>
+            <br>
+            <div id="selectlist">
+                    <strong><span style="float: left;margin-left:300px;">Select First state:</span></strong>
+                    <strong><span style="float: right;margin-right:300px;">Select Second state:</span></strong>
+                    <select id="items" onchange="getSelectValue()" >
+                    <option value="22,89,59,599">Uttar Pradesh</option>
+                    <option value="12,08,37,347">Maharashtra</option>
+                    <option value="11,94,61,013">Bihar</option>
+                    <option value="9,76,94,960">West Bengal</option>
+                    <option value="8,23,42,793">Madhya Pradesh</option>
+                    <option value="7,82,30,816">Rajasthan</option>
+                    <option value="7,64,81,545">Tamil Nadu</option>
+                    <option value="6,61,65,886">Karnataka</option>
+                    <option value="6,39,07,200">Gujarat</option>
+                    <option value="5,28,83,163">Andhra Pradesh</option>
+                    <option value="4,54,29,399">Odisha</option>
+                    <option value="3,84,72,769">Telangana</option>
+                    <option value="3,73,29,128">Jharkhand</option>
+                    <option value="3,53,30,888">Kerala</option>
+                    <option value="3,45,86,234">Assam</option>
+                    <option value="2,96,11,935">Punjab</option>
+                    <option value="2,85,66,990">Chhattisgarh</option>
+                    <option value="2,73,88,008">Haryana</option>
+                    <option value="1,83,45,784">Delhi</option>
+                    <option value="1,36,35,010">Jammu & Kashmir</option>
+                    <option value="1,10,90,425">Uttarakhand</option>
+                    <option value="73,16,708">Himachal Pradesh</option>
+                    <option value="40,57,847">Tripura</option>
+                    <option value="32,76,323">Meghalaya</option>
+                    <option value="30,08,546">Manipur</option>
+                    <option value="21,89,297">Nagaland</option>
+                    <option value="15,42,750">Goa</option>
+                    <option value="15,28,296">Arunachal Pradesh</option>
+                    <option value="13,75,592">Puducherry</option>
+                    <option value="12,05,974">Mizoram</option>
+                    <option value="11,26,705">Chandigarh</option>
+                    <option value="6,71,720">Sikkim</option>
+                    <option value="4,19,978">A.& N.Islands</option>
+                    <option value="3,78,979">D.& N.Haveli</option>
+                    <option value="2,20,084">Daman & Diu</option>
+                    <option value="71,218">Lakshadweep</optio>
+                    </select>
+                    <select id="items2" onchange="getSelectValue2()" >
+                    
+                    <option value="12,08,37,347">Maharashtra</option>
+                    <option value="22,89,59,599">Uttar Pradesh</option>
+                    <option value="11,94,61,013">Bihar</option>
+                    <option value="9,76,94,960">West Bengal</option>
+                    <option value="8,23,42,793">Madhya Pradesh</option>
+                    <option value="7,82,30,816">Rajasthan</option>
+                    <option value="7,64,81,545">Tamil Nadu</option>
+                    <option value="6,61,65,886">Karnataka</option>
+                    <option value="6,39,07,200">Gujarat</option>
+                    <option value="5,28,83,163">Andhra Pradesh</option>
+                    <option value="4,54,29,399">Odisha</option>
+                    <option value="3,84,72,769">Telangana</option>
+                    <option value="3,73,29,128">Jharkhand</option>
+                    <option value="3,53,30,888">Kerala</option>
+                    <option value="3,45,86,234">Assam</option>
+                    <option value="2,96,11,935">Punjab</option>
+                    <option value="2,85,66,990">Chhattisgarh</option>
+                    <option value="2,73,88,008">Haryana</option>
+                    <option value="1,83,45,784">Delhi</option>
+                    <option value="1,36,35,010">Jammu & Kashmir</option>
+                    <option value="1,10,90,425">Uttarakhand</option>
+                    <option value="73,16,708">Himachal Pradesh</option>
+                    <option value="40,57,847">Tripura</option>
+                    <option value="32,76,323">Meghalaya</option>
+                    <option value="30,08,546">Manipur</option>
+                    <option value="21,89,297">Nagaland</option>
+                    <option value="15,42,750">Goa</option>
+                    <option value="15,28,296">Arunachal Pradesh</option>
+                    <option value="13,75,592">Puducherry</option>
+                    <option value="12,05,974">Mizoram</option>
+                    <option value="11,26,705">Chandigarh</option>
+                    <option value="6,71,720">Sikkim</option>
+                    <option value="4,19,978">A.& N.Islands</option>
+                    <option value="3,78,979">D.& N.Haveli</option>
+                    <option value="2,20,084">Daman & Diu</option>
+                    <option value="71,218">Lakshadweep</optio>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <strong><p style="margin-left: 600px;font-size:30px;">Click Below!,To Get details</p></strong>
+                    <button id="m" onclick="data()">Compare</button></span>
+            
+
+                </div>
+                <div id="datax">
+                        <div id="i1">
+                            <p id="demo1"></p>
+        
+                        </div>
+                        <div id="i2">
+                            <p id="demo2"></p>
+    
+                        </div>
+                    </div>
+        <div id="i3">
+                <p id="demo3" ></p>
+        </div>
+        </div>
+
+        
+    </div>
+ 
+   <script src="jquery.js">
+    </script>
+    <script>
+
+function getSelectValue()
+{
+    var selected=document.getElementById("items").value;
+    return selected;
+
+}
+function getSelectValue2()
+{
+    var selected1=document.getElementById("items2").value;
+   return selected1;
+   
+
+}
+function read(){
+    var e = document.getElementById("items2");
+    var result = e.options[e.selectedIndex].text;
+    return result;
+}
+
+
+function data()
+{
+   var a=parseInt(getSelectValue());
+   var b=parseInt(getSelectValue2());
+   var m=read();
+   if(a >b){
+       var c =a-b;
+       var d= "State first: "+a+" \n"+"State second:"+b+" "+"\n"+c+" "+" Tones will exported to"+" "+m+"\n"+"State First is Greater in Crop Production per year";
+       Swal.fire(d);
+      
+   }
+   else if(a<b){
+       var e=b-a;
+       var ef= "State first: "+a+" \n"+"State second:"+b+" "+"\n"+e+" "+" Tones will exported to"+" "+ef+"\n"+"State Second is Greater in Crop production per year";
+       Swal.fire(ef);
+   }
+   else if(a==b)
+   {
+       Swal.fire("Please Select Unequal Options");
+   }
+    
+}
+
+ </script>
+
+
+</body>
+</html>
